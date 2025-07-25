@@ -76,8 +76,12 @@ def make_move(player_name, player_symbol):
                 sys.exit()
             break
 
-# Main game loop
-welcome()
-while True:
-    make_move(P1_NAME, P1_SYMBOL)
-    make_move(P2_NAME, P2_SYMBOL)
+
+def main():
+    welcome()
+    while True:
+        make_move(P1_NAME, P1_SYMBOL)
+        make_move(P2_NAME, P2_SYMBOL)
+
+if __name__ == '__main__':
+    main()
